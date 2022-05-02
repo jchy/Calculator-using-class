@@ -20,11 +20,6 @@ class Calculator{
     }
 }
 
-calulate(10,20,"+");
-calulate(10,20,"*");
-calulate(10,20,"-");
-calulate(10,20,"/");
-
 function calulate(a,b,operator){
     const calculator = new Calculator(a,b);
     switch(operator){
@@ -43,8 +38,10 @@ function calulate(a,b,operator){
         case "%":{
             return console.log(calculator.modulo());
         }
-        // default:{ 
-        //     return console.log("Enter the value and operators correctly");
-        // }
     }
 }
+
+calulate(10,20,"+");
+calulate(10,20,"*");
+calulate(10,20,"-");
+calulate(10,20,"/");
